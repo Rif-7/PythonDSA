@@ -1,4 +1,5 @@
-class Tree: 
+class Tree:
+    """Abstract Base Class Representing a Tree Structure"""
     
     class Position:
         
