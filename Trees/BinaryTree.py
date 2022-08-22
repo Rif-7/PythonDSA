@@ -11,7 +11,7 @@ class BinaryTree(Tree):
         raise NotImplementedError("Must Be Implemented By Subclass")
 
     def sibling(self, p):
-        parent = p.parent()
+        parent = self.parent(p)
         if parent is None:
             # p must be root 
             return None

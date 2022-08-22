@@ -1,4 +1,3 @@
-from xml.dom import ValidationErr
 from BinaryTree import BinaryTree
 
 class LinkedBinaryTree(BinaryTree):
