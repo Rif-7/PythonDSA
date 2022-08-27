@@ -41,7 +41,13 @@ class Tree:
             return 0
         return 1 + self.depth(self.parent(p))
 
-    def height(self, p):
+    def height(self, p=None):
+        if p is None:
+            p = self.root()
+        
+        self.height1(p)
+
+    def height1(self, p):
         if self.is_leaf(p):
             return 0
         return 1 + max(self.height(child) for child in self.children(p))

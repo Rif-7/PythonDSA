@@ -100,7 +100,7 @@ class LinkedBinaryTree(BinaryTree):
         
         
     def _replace(self, p, e):
-        # Replaced the element at position p and return the old element
+        # Replace the element at position p and return the old element
 
         node = self._validate(p)
         old = node._element
